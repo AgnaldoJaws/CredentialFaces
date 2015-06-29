@@ -1,0 +1,627 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/0.10.11/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'gulp' ]
+2 info using npm@1.2.30
+3 info using node@v0.10.11
+4 verbose read json /usr/local/share/npm/lib/package.json
+5 verbose read json /usr/local/share/npm/lib/package.json
+6 verbose cache add [ 'gulp', null ]
+7 verbose cache add name=undefined spec="gulp" args=["gulp",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'gulp',
+8 verbose parsed url   path: 'gulp',
+8 verbose parsed url   href: 'gulp' }
+9 silly lockFile 9750c68d-gulp gulp
+10 verbose lock gulp /Users/wesley/.npm/9750c68d-gulp.lock
+11 silly lockFile 9750c68d-gulp gulp
+12 silly lockFile 9750c68d-gulp gulp
+13 verbose addNamed [ 'gulp', '' ]
+14 verbose addNamed [ null, '' ]
+15 silly lockFile 72f4391e-gulp gulp@
+16 verbose lock gulp@ /Users/wesley/.npm/72f4391e-gulp.lock
+17 silly addNameRange { name: 'gulp', range: '', hasData: false }
+18 verbose url raw gulp
+19 verbose url resolving [ 'https://registry.npmjs.org/', './gulp' ]
+20 verbose url resolved https://registry.npmjs.org/gulp
+21 info trying registry request attempt 1 at 19:20:18
+22 http GET https://registry.npmjs.org/gulp
+23 http 200 https://registry.npmjs.org/gulp
+24 silly registry.get cb [ 200,
+24 silly registry.get   { date: 'Wed, 05 Mar 2014 22:20:16 GMT',
+24 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+24 silly registry.get     etag: '"65H1DFQR71EGXFZTMJ87IBGEA"',
+24 silly registry.get     'content-type': 'application/json',
+24 silly registry.get     'cache-control': 'max-age=1',
+24 silly registry.get     'content-length': '60843',
+24 silly registry.get     'accept-ranges': 'bytes',
+24 silly registry.get     via: '1.1 varnish',
+24 silly registry.get     age: '84',
+24 silly registry.get     'x-served-by': 'cache-v37-ASH',
+24 silly registry.get     'x-cache': 'HIT',
+24 silly registry.get     'x-cache-hits': '1',
+24 silly registry.get     'x-timer': 'S1394058016.418469906,VS0,VE1',
+24 silly registry.get     vary: 'Accept',
+24 silly registry.get     'keep-alive': 'timeout=10, max=50',
+24 silly registry.get     connection: 'Keep-Alive' } ]
+25 silly addNameRange number 2 { name: 'gulp', range: '', hasData: true }
+26 silly addNameRange versions [ 'gulp',
+26 silly addNameRange   [ '0.0.1',
+26 silly addNameRange     '0.0.2',
+26 silly addNameRange     '0.0.3',
+26 silly addNameRange     '0.0.4',
+26 silly addNameRange     '0.0.5',
+26 silly addNameRange     '0.0.7',
+26 silly addNameRange     '0.0.8',
+26 silly addNameRange     '0.0.9',
+26 silly addNameRange     '0.1.0',
+26 silly addNameRange     '0.2.0',
+26 silly addNameRange     '1.0.0',
+26 silly addNameRange     '1.1.0',
+26 silly addNameRange     '1.2.0',
+26 silly addNameRange     '1.2.1',
+26 silly addNameRange     '2.0.0',
+26 silly addNameRange     '2.0.1',
+26 silly addNameRange     '2.1.0',
+26 silly addNameRange     '2.2.0',
+26 silly addNameRange     '2.3.0',
+26 silly addNameRange     '2.4.0',
+26 silly addNameRange     '2.4.1',
+26 silly addNameRange     '2.6.0',
+26 silly addNameRange     '2.6.1',
+26 silly addNameRange     '2.7.0',
+26 silly addNameRange     '3.0.0',
+26 silly addNameRange     '3.1.1',
+26 silly addNameRange     '3.1.2',
+26 silly addNameRange     '3.1.3',
+26 silly addNameRange     '3.1.4',
+26 silly addNameRange     '3.2.0',
+26 silly addNameRange     '3.2.1',
+26 silly addNameRange     '3.2.2',
+26 silly addNameRange     '3.2.3',
+26 silly addNameRange     '3.2.4',
+26 silly addNameRange     '3.2.5',
+26 silly addNameRange     '3.3.0',
+26 silly addNameRange     '3.3.1',
+26 silly addNameRange     '3.3.2',
+26 silly addNameRange     '3.3.4',
+26 silly addNameRange     '3.4.0',
+26 silly addNameRange     '3.5.0',
+26 silly addNameRange     '3.5.1',
+26 silly addNameRange     '3.5.2',
+26 silly addNameRange     '3.5.5' ] ]
+27 verbose addNamed [ 'gulp', '3.5.5' ]
+28 verbose addNamed [ '3.5.5', '3.5.5' ]
+29 silly lockFile f8527a38-gulp-3-5-5 gulp@3.5.5
+30 verbose lock gulp@3.5.5 /Users/wesley/.npm/f8527a38-gulp-3-5-5.lock
+31 silly lockFile c09e9910-ry-npmjs-org-gulp-gulp-3-5-5-tgz https://registry.npmjs.org/gulp/-/gulp-3.5.5.tgz
+32 verbose lock https://registry.npmjs.org/gulp/-/gulp-3.5.5.tgz /Users/wesley/.npm/c09e9910-ry-npmjs-org-gulp-gulp-3-5-5-tgz.lock
+33 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp/-/gulp-3.5.5.tgz',
+33 verbose addRemoteTarball   'dbf0a3e00333f19527c2d977f069e8fad5cbc53a' ]
+34 info retry fetch attempt 1 at 19:20:19
+35 verbose fetch to= /var/folders/g8/zssb2jyj5d92lbj5ky5h4rtm0000gn/T/npm-72901/1394058019372-0.2427860745228827/tmp.tgz
+36 http GET https://registry.npmjs.org/gulp/-/gulp-3.5.5.tgz
+37 http 200 https://registry.npmjs.org/gulp/-/gulp-3.5.5.tgz
+38 verbose tar unpack /var/folders/g8/zssb2jyj5d92lbj5ky5h4rtm0000gn/T/npm-72901/1394058019372-0.2427860745228827/tmp.tgz
+39 silly lockFile d31196b1-19372-0-2427860745228827-package tar:///var/folders/g8/zssb2jyj5d92lbj5ky5h4rtm0000gn/T/npm-72901/1394058019372-0.2427860745228827/package
+40 verbose lock tar:///var/folders/g8/zssb2jyj5d92lbj5ky5h4rtm0000gn/T/npm-72901/1394058019372-0.2427860745228827/package /Users/wesley/.npm/d31196b1-19372-0-2427860745228827-package.lock
+41 silly lockFile 29233400-19372-0-2427860745228827-tmp-tgz tar:///var/folders/g8/zssb2jyj5d92lbj5ky5h4rtm0000gn/T/npm-72901/1394058019372-0.2427860745228827/tmp.tgz
+42 verbose lock tar:///var/folders/g8/zssb2jyj5d92lbj5ky5h4rtm0000gn/T/npm-72901/1394058019372-0.2427860745228827/tmp.tgz /Users/wesley/.npm/29233400-19372-0-2427860745228827-tmp-tgz.lock
+43 silly gunzTarPerm modes [ '755', '644' ]
+44 silly gunzTarPerm extractEntry package.json
+45 silly gunzTarPerm extractEntry README.md
+46 silly gunzTarPerm extractEntry index.js
+47 silly gunzTarPerm extractEntry bin/gulp.js
+48 silly gunzTarPerm extractEntry lib/completion.js
+49 silly gunzTarPerm extractEntry lib/taskTree.js
+50 verbose read json /var/folders/g8/zssb2jyj5d92lbj5ky5h4rtm0000gn/T/npm-72901/1394058019372-0.2427860745228827/package/package.json
+51 silly lockFile d31196b1-19372-0-2427860745228827-package tar:///var/folders/g8/zssb2jyj5d92lbj5ky5h4rtm0000gn/T/npm-72901/1394058019372-0.2427860745228827/package
+52 silly lockFile d31196b1-19372-0-2427860745228827-package tar:///var/folders/g8/zssb2jyj5d92lbj5ky5h4rtm0000gn/T/npm-72901/1394058019372-0.2427860745228827/package
+53 silly lockFile 29233400-19372-0-2427860745228827-tmp-tgz tar:///var/folders/g8/zssb2jyj5d92lbj5ky5h4rtm0000gn/T/npm-72901/1394058019372-0.2427860745228827/tmp.tgz
+54 silly lockFile 29233400-19372-0-2427860745228827-tmp-tgz tar:///var/folders/g8/zssb2jyj5d92lbj5ky5h4rtm0000gn/T/npm-72901/1394058019372-0.2427860745228827/tmp.tgz
+55 verbose from cache /var/folders/g8/zssb2jyj5d92lbj5ky5h4rtm0000gn/T/npm-72901/1394058019372-0.2427860745228827/package/package.json
+56 verbose tar pack [ '/Users/wesley/.npm/gulp/3.5.5/package.tgz',
+56 verbose tar pack   '/var/folders/g8/zssb2jyj5d92lbj5ky5h4rtm0000gn/T/npm-72901/1394058019372-0.2427860745228827/package' ]
+57 verbose tarball /Users/wesley/.npm/gulp/3.5.5/package.tgz
+58 verbose folder /var/folders/g8/zssb2jyj5d92lbj5ky5h4rtm0000gn/T/npm-72901/1394058019372-0.2427860745228827/package
+59 silly lockFile d31196b1-19372-0-2427860745228827-package tar:///var/folders/g8/zssb2jyj5d92lbj5ky5h4rtm0000gn/T/npm-72901/1394058019372-0.2427860745228827/package
+60 verbose lock tar:///var/folders/g8/zssb2jyj5d92lbj5ky5h4rtm0000gn/T/npm-72901/1394058019372-0.2427860745228827/package /Users/wesley/.npm/d31196b1-19372-0-2427860745228827-package.lock
+61 silly lockFile 1062040d-esley-npm-gulp-3-5-5-package-tgz tar:///Users/wesley/.npm/gulp/3.5.5/package.tgz
+62 verbose lock tar:///Users/wesley/.npm/gulp/3.5.5/package.tgz /Users/wesley/.npm/1062040d-esley-npm-gulp-3-5-5-package-tgz.lock
+63 silly lockFile d31196b1-19372-0-2427860745228827-package tar:///var/folders/g8/zssb2jyj5d92lbj5ky5h4rtm0000gn/T/npm-72901/1394058019372-0.2427860745228827/package
+64 silly lockFile d31196b1-19372-0-2427860745228827-package tar:///var/folders/g8/zssb2jyj5d92lbj5ky5h4rtm0000gn/T/npm-72901/1394058019372-0.2427860745228827/package
+65 silly lockFile 1062040d-esley-npm-gulp-3-5-5-package-tgz tar:///Users/wesley/.npm/gulp/3.5.5/package.tgz
+66 silly lockFile 1062040d-esley-npm-gulp-3-5-5-package-tgz tar:///Users/wesley/.npm/gulp/3.5.5/package.tgz
+67 silly lockFile a281e4c5-rs-wesley-npm-gulp-3-5-5-package /Users/wesley/.npm/gulp/3.5.5/package
+68 verbose lock /Users/wesley/.npm/gulp/3.5.5/package /Users/wesley/.npm/a281e4c5-rs-wesley-npm-gulp-3-5-5-package.lock
+69 silly lockFile a281e4c5-rs-wesley-npm-gulp-3-5-5-package /Users/wesley/.npm/gulp/3.5.5/package
+70 silly lockFile a281e4c5-rs-wesley-npm-gulp-3-5-5-package /Users/wesley/.npm/gulp/3.5.5/package
+71 verbose tar unpack /Users/wesley/.npm/gulp/3.5.5/package.tgz
+72 silly lockFile cd12bdcc-rs-wesley-npm-gulp-3-5-5-package tar:///Users/wesley/.npm/gulp/3.5.5/package
+73 verbose lock tar:///Users/wesley/.npm/gulp/3.5.5/package /Users/wesley/.npm/cd12bdcc-rs-wesley-npm-gulp-3-5-5-package.lock
+74 silly lockFile 1062040d-esley-npm-gulp-3-5-5-package-tgz tar:///Users/wesley/.npm/gulp/3.5.5/package.tgz
+75 verbose lock tar:///Users/wesley/.npm/gulp/3.5.5/package.tgz /Users/wesley/.npm/1062040d-esley-npm-gulp-3-5-5-package-tgz.lock
+76 silly gunzTarPerm modes [ '755', '644' ]
+77 silly gunzTarPerm extractEntry package.json
+78 silly gunzTarPerm extractEntry README.md
+79 silly gunzTarPerm extractEntry index.js
+80 silly gunzTarPerm extractEntry bin/gulp.js
+81 silly gunzTarPerm extractEntry lib/completion.js
+82 silly gunzTarPerm extractEntry lib/taskTree.js
+83 verbose read json /Users/wesley/.npm/gulp/3.5.5/package/package.json
+84 silly lockFile cd12bdcc-rs-wesley-npm-gulp-3-5-5-package tar:///Users/wesley/.npm/gulp/3.5.5/package
+85 silly lockFile cd12bdcc-rs-wesley-npm-gulp-3-5-5-package tar:///Users/wesley/.npm/gulp/3.5.5/package
+86 silly lockFile 1062040d-esley-npm-gulp-3-5-5-package-tgz tar:///Users/wesley/.npm/gulp/3.5.5/package.tgz
+87 silly lockFile 1062040d-esley-npm-gulp-3-5-5-package-tgz tar:///Users/wesley/.npm/gulp/3.5.5/package.tgz
+88 verbose from cache /Users/wesley/.npm/gulp/3.5.5/package/package.json
+89 verbose chmod /Users/wesley/.npm/gulp/3.5.5/package.tgz 644
+90 verbose chown /Users/wesley/.npm/gulp/3.5.5/package.tgz [ 501, 20 ]
+91 silly lockFile c09e9910-ry-npmjs-org-gulp-gulp-3-5-5-tgz https://registry.npmjs.org/gulp/-/gulp-3.5.5.tgz
+92 silly lockFile c09e9910-ry-npmjs-org-gulp-gulp-3-5-5-tgz https://registry.npmjs.org/gulp/-/gulp-3.5.5.tgz
+93 silly lockFile f8527a38-gulp-3-5-5 gulp@3.5.5
+94 silly lockFile f8527a38-gulp-3-5-5 gulp@3.5.5
+95 silly lockFile 72f4391e-gulp gulp@
+96 silly lockFile 72f4391e-gulp gulp@
+97 silly resolved [ { name: 'gulp',
+97 silly resolved     description: 'The streaming build system',
+97 silly resolved     version: '3.5.5',
+97 silly resolved     homepage: 'http://gulpjs.com',
+97 silly resolved     repository: { type: 'git', url: 'gulpjs/gulp' },
+97 silly resolved     author:
+97 silly resolved      { name: 'Fractal',
+97 silly resolved        email: 'contact@wearefractal.com',
+97 silly resolved        url: 'http://wearefractal.com/' },
+97 silly resolved     tags: [ 'build', 'stream', 'system', 'make', 'tool', 'asset', 'pipeline' ],
+97 silly resolved     files: [ 'index.js', 'lib', 'bin' ],
+97 silly resolved     bin: { gulp: './bin/gulp.js' },
+97 silly resolved     dependencies:
+97 silly resolved      { 'gulp-util': '^2.2.0',
+97 silly resolved        orchestrator: '^0.3.0',
+97 silly resolved        'pretty-hrtime': '^0.2.0',
+97 silly resolved        'vinyl-fs': '^0.1.0',
+97 silly resolved        semver: '^2.2.1',
+97 silly resolved        archy: '^0.0.2',
+97 silly resolved        deprecated: '^0.0.1',
+97 silly resolved        liftoff: '^0.9.3',
+97 silly resolved        chalk: '^0.4.0' },
+97 silly resolved     devDependencies:
+97 silly resolved      { mocha: '^1.17.0',
+97 silly resolved        'mocha-lcov-reporter': '^0.0.1',
+97 silly resolved        coveralls: '^2.7.0',
+97 silly resolved        istanbul: '^0.2.3',
+97 silly resolved        should: '^3.1.0',
+97 silly resolved        rimraf: '^2.2.5',
+97 silly resolved        q: '^1.0.0',
+97 silly resolved        jshint: '^2.4.1',
+97 silly resolved        'graceful-fs': '^2.0.1',
+97 silly resolved        'gulp-jshint': '^1.4.0',
+97 silly resolved        mkdirp: '^0.3.5' },
+97 silly resolved     scripts:
+97 silly resolved      { test: 'node gulpfile.js && mocha --reporter spec',
+97 silly resolved        coveralls: 'istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage' },
+97 silly resolved     engineStrict: true,
+97 silly resolved     engines: { node: '>= 0.9' },
+97 silly resolved     licenses: [ [Object] ],
+97 silly resolved     readme: '<p align="center">\n  <a href="http://gulpjs.com">\n    <img height="194" width="98" src="https://raw.github.com/gulpjs/artwork/master/gulp.png"/>\n  </a>\n</p>\n\n# gulp [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Dependency Status][daviddm-url]][daviddm-image]\n> The streaming build system\n\n## Like what we do?\n\n[Support us via gittip](https://www.gittip.com/WeAreFractal/)\n\n## Documentation\n\nFor a Getting started guide, API docs, recipes, making a plugin, etc. see the [documentation page](/docs/README.md)!\n\n## Sample gulpfile\n\nThis file is just a quick sample to give you a taste of what gulp does.\n\n```javascript\nvar gulp = require(\'gulp\');\n\nvar coffee = require(\'gulp-coffee\');\nvar concat = require(\'gulp-concat\');\nvar uglify = require(\'gulp-uglify\');\nvar imagemin = require(\'gulp-imagemin\');\n\nvar paths = {\n  scripts: [\'client/js/**/*.coffee\', \'!client/external/**/*.coffee\'],\n  images: \'client/img/**/*\'\n};\n\ngulp.task(\'scripts\', function() {\n  // Minify and copy all JavaScript (except vendor scripts)\n  return gulp.src(paths.scripts)\n    .pipe(coffee())\n    .pipe(uglify())\n    .pipe(concat(\'all.min.js\'))\n    .pipe(gulp.dest(\'build/js\'));\n});\n\n// Copy all static images\ngulp.task(\'images\', function() {\n return gulp.src(paths.images)\n    // Pass in options to the task\n    .pipe(imagemin({optimizationLevel: 5}))\n    .pipe(gulp.dest(\'build/img\'));\n});\n\n// Rerun the task when a file changes\ngulp.task(\'watch\', function () {\n  gulp.watch(paths.scripts, [\'scripts\']);\n  gulp.watch(paths.images, [\'images\']);\n});\n\n// The default task (called when you run `gulp` from cli)\ngulp.task(\'default\', [\'scripts\', \'images\', \'watch\']);\n\n```\n\n## Incremental Builds\n\nWe recommend these plugins:\n\n- [gulp-changed](https://github.com/sindresorhus/gulp-changed)\n- [gulp-cached](https://github.com/wearefractal/gulp-cached)\n\n## Want to contribute?\n\nAnyone can help make this project better - check out the [Contributing guide](/CONTRIBUTING.md)!\n\n\n[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/wearefractal/gulp/trend.png)](https://bitdeli.com/free "Bitdeli Badge")\n\n[npm-url]: https://npmjs.org/package/gulp\n[npm-image]: https://badge.fury.io/js/gulp.png\n[travis-url]: https://travis-ci.org/gulpjs/gulp\n[travis-image]: https://travis-ci.org/gulpjs/gulp.png?branch=master\n[coveralls-url]: https://coveralls.io/r/gulpjs/gulp\n[coveralls-image]: https://coveralls.io/repos/gulpjs/gulp/badge.png\n[depstat-url]: https://david-dm.org/gulpjs/gulp\n[depstat-image]: https://david-dm.org/gulpjs/gulp.png\n[daviddm-url]: https://david-dm.org/gulpjs/gulp.png?theme=shields.io\n[daviddm-image]: https://david-dm.org/gulpjs/gulp\n',
+97 silly resolved     readmeFilename: 'README.md',
+97 silly resolved     _id: 'gulp@3.5.5',
+97 silly resolved     dist: { shasum: 'dbf0a3e00333f19527c2d977f069e8fad5cbc53a' },
+97 silly resolved     _from: 'gulp@',
+97 silly resolved     _resolved: 'https://registry.npmjs.org/gulp/-/gulp-3.5.5.tgz' } ]
+98 info install gulp@3.5.5 into /usr/local/share/npm/lib
+99 info installOne gulp@3.5.5
+100 verbose from cache /Users/wesley/.npm/gulp/3.5.5/package/package.json
+101 info /usr/local/share/npm/lib/node_modules/gulp unbuild
+102 verbose read json /usr/local/share/npm/lib/node_modules/gulp/package.json
+103 verbose tar unpack /Users/wesley/.npm/gulp/3.5.5/package.tgz
+104 silly lockFile 38c39070--share-npm-lib-node-modules-gulp tar:///usr/local/share/npm/lib/node_modules/gulp
+105 verbose lock tar:///usr/local/share/npm/lib/node_modules/gulp /Users/wesley/.npm/38c39070--share-npm-lib-node-modules-gulp.lock
+106 silly lockFile 1062040d-esley-npm-gulp-3-5-5-package-tgz tar:///Users/wesley/.npm/gulp/3.5.5/package.tgz
+107 verbose lock tar:///Users/wesley/.npm/gulp/3.5.5/package.tgz /Users/wesley/.npm/1062040d-esley-npm-gulp-3-5-5-package-tgz.lock
+108 silly gunzTarPerm modes [ '755', '644' ]
+109 silly gunzTarPerm extractEntry package.json
+110 silly gunzTarPerm extractEntry README.md
+111 silly gunzTarPerm extractEntry index.js
+112 silly gunzTarPerm extractEntry bin/gulp.js
+113 silly gunzTarPerm extractEntry lib/completion.js
+114 silly gunzTarPerm extractEntry lib/taskTree.js
+115 verbose read json /usr/local/share/npm/lib/node_modules/gulp/package.json
+116 silly lockFile 38c39070--share-npm-lib-node-modules-gulp tar:///usr/local/share/npm/lib/node_modules/gulp
+117 silly lockFile 38c39070--share-npm-lib-node-modules-gulp tar:///usr/local/share/npm/lib/node_modules/gulp
+118 silly lockFile 1062040d-esley-npm-gulp-3-5-5-package-tgz tar:///Users/wesley/.npm/gulp/3.5.5/package.tgz
+119 silly lockFile 1062040d-esley-npm-gulp-3-5-5-package-tgz tar:///Users/wesley/.npm/gulp/3.5.5/package.tgz
+120 info preinstall gulp@3.5.5
+121 verbose from cache /usr/local/share/npm/lib/node_modules/gulp/package.json
+122 verbose readDependencies using package.json deps
+123 verbose from cache /usr/local/share/npm/lib/node_modules/gulp/package.json
+124 verbose readDependencies using package.json deps
+125 verbose cache add [ 'gulp-util@^2.2.0', null ]
+126 verbose cache add name=undefined spec="gulp-util@^2.2.0" args=["gulp-util@^2.2.0",null]
+127 verbose parsed url { protocol: null,
+127 verbose parsed url   slashes: null,
+127 verbose parsed url   auth: null,
+127 verbose parsed url   host: null,
+127 verbose parsed url   port: null,
+127 verbose parsed url   hostname: null,
+127 verbose parsed url   hash: null,
+127 verbose parsed url   search: null,
+127 verbose parsed url   query: null,
+127 verbose parsed url   pathname: 'gulp-util@^2.2.0',
+127 verbose parsed url   path: 'gulp-util@^2.2.0',
+127 verbose parsed url   href: 'gulp-util@^2.2.0' }
+128 verbose cache add name="gulp-util" spec="^2.2.0" args=["gulp-util","^2.2.0"]
+129 verbose parsed url { protocol: null,
+129 verbose parsed url   slashes: null,
+129 verbose parsed url   auth: null,
+129 verbose parsed url   host: null,
+129 verbose parsed url   port: null,
+129 verbose parsed url   hostname: null,
+129 verbose parsed url   hash: null,
+129 verbose parsed url   search: null,
+129 verbose parsed url   query: null,
+129 verbose parsed url   pathname: '^2.2.0',
+129 verbose parsed url   path: '^2.2.0',
+129 verbose parsed url   href: '^2.2.0' }
+130 verbose addNamed [ 'gulp-util', '^2.2.0' ]
+131 verbose addNamed [ null, null ]
+132 silly lockFile b0a108b6-gulp-util-2-2-0 gulp-util@^2.2.0
+133 verbose lock gulp-util@^2.2.0 /Users/wesley/.npm/b0a108b6-gulp-util-2-2-0.lock
+134 verbose cache add [ 'orchestrator@^0.3.0', null ]
+135 verbose cache add name=undefined spec="orchestrator@^0.3.0" args=["orchestrator@^0.3.0",null]
+136 verbose parsed url { protocol: null,
+136 verbose parsed url   slashes: null,
+136 verbose parsed url   auth: null,
+136 verbose parsed url   host: null,
+136 verbose parsed url   port: null,
+136 verbose parsed url   hostname: null,
+136 verbose parsed url   hash: null,
+136 verbose parsed url   search: null,
+136 verbose parsed url   query: null,
+136 verbose parsed url   pathname: 'orchestrator@^0.3.0',
+136 verbose parsed url   path: 'orchestrator@^0.3.0',
+136 verbose parsed url   href: 'orchestrator@^0.3.0' }
+137 verbose cache add name="orchestrator" spec="^0.3.0" args=["orchestrator","^0.3.0"]
+138 verbose parsed url { protocol: null,
+138 verbose parsed url   slashes: null,
+138 verbose parsed url   auth: null,
+138 verbose parsed url   host: null,
+138 verbose parsed url   port: null,
+138 verbose parsed url   hostname: null,
+138 verbose parsed url   hash: null,
+138 verbose parsed url   search: null,
+138 verbose parsed url   query: null,
+138 verbose parsed url   pathname: '^0.3.0',
+138 verbose parsed url   path: '^0.3.0',
+138 verbose parsed url   href: '^0.3.0' }
+139 verbose addNamed [ 'orchestrator', '^0.3.0' ]
+140 verbose addNamed [ null, null ]
+141 silly lockFile 74d9c599-orchestrator-0-3-0 orchestrator@^0.3.0
+142 verbose lock orchestrator@^0.3.0 /Users/wesley/.npm/74d9c599-orchestrator-0-3-0.lock
+143 verbose cache add [ 'pretty-hrtime@^0.2.0', null ]
+144 verbose cache add name=undefined spec="pretty-hrtime@^0.2.0" args=["pretty-hrtime@^0.2.0",null]
+145 verbose parsed url { protocol: null,
+145 verbose parsed url   slashes: null,
+145 verbose parsed url   auth: null,
+145 verbose parsed url   host: null,
+145 verbose parsed url   port: null,
+145 verbose parsed url   hostname: null,
+145 verbose parsed url   hash: null,
+145 verbose parsed url   search: null,
+145 verbose parsed url   query: null,
+145 verbose parsed url   pathname: 'pretty-hrtime@^0.2.0',
+145 verbose parsed url   path: 'pretty-hrtime@^0.2.0',
+145 verbose parsed url   href: 'pretty-hrtime@^0.2.0' }
+146 verbose cache add name="pretty-hrtime" spec="^0.2.0" args=["pretty-hrtime","^0.2.0"]
+147 verbose parsed url { protocol: null,
+147 verbose parsed url   slashes: null,
+147 verbose parsed url   auth: null,
+147 verbose parsed url   host: null,
+147 verbose parsed url   port: null,
+147 verbose parsed url   hostname: null,
+147 verbose parsed url   hash: null,
+147 verbose parsed url   search: null,
+147 verbose parsed url   query: null,
+147 verbose parsed url   pathname: '^0.2.0',
+147 verbose parsed url   path: '^0.2.0',
+147 verbose parsed url   href: '^0.2.0' }
+148 verbose addNamed [ 'pretty-hrtime', '^0.2.0' ]
+149 verbose addNamed [ null, null ]
+150 silly lockFile 3ac7556f-pretty-hrtime-0-2-0 pretty-hrtime@^0.2.0
+151 verbose lock pretty-hrtime@^0.2.0 /Users/wesley/.npm/3ac7556f-pretty-hrtime-0-2-0.lock
+152 info addNameTag [ 'gulp-util', '^2.2.0' ]
+153 info addNameTag [ 'orchestrator', '^0.3.0' ]
+154 verbose cache add [ 'vinyl-fs@^0.1.0', null ]
+155 verbose cache add name=undefined spec="vinyl-fs@^0.1.0" args=["vinyl-fs@^0.1.0",null]
+156 verbose parsed url { protocol: null,
+156 verbose parsed url   slashes: null,
+156 verbose parsed url   auth: null,
+156 verbose parsed url   host: null,
+156 verbose parsed url   port: null,
+156 verbose parsed url   hostname: null,
+156 verbose parsed url   hash: null,
+156 verbose parsed url   search: null,
+156 verbose parsed url   query: null,
+156 verbose parsed url   pathname: 'vinyl-fs@^0.1.0',
+156 verbose parsed url   path: 'vinyl-fs@^0.1.0',
+156 verbose parsed url   href: 'vinyl-fs@^0.1.0' }
+157 verbose cache add name="vinyl-fs" spec="^0.1.0" args=["vinyl-fs","^0.1.0"]
+158 verbose parsed url { protocol: null,
+158 verbose parsed url   slashes: null,
+158 verbose parsed url   auth: null,
+158 verbose parsed url   host: null,
+158 verbose parsed url   port: null,
+158 verbose parsed url   hostname: null,
+158 verbose parsed url   hash: null,
+158 verbose parsed url   search: null,
+158 verbose parsed url   query: null,
+158 verbose parsed url   pathname: '^0.1.0',
+158 verbose parsed url   path: '^0.1.0',
+158 verbose parsed url   href: '^0.1.0' }
+159 verbose addNamed [ 'vinyl-fs', '^0.1.0' ]
+160 verbose addNamed [ null, null ]
+161 silly lockFile 5c12a853-vinyl-fs-0-1-0 vinyl-fs@^0.1.0
+162 verbose lock vinyl-fs@^0.1.0 /Users/wesley/.npm/5c12a853-vinyl-fs-0-1-0.lock
+163 verbose cache add [ 'semver@^2.2.1', null ]
+164 verbose cache add name=undefined spec="semver@^2.2.1" args=["semver@^2.2.1",null]
+165 verbose parsed url { protocol: null,
+165 verbose parsed url   slashes: null,
+165 verbose parsed url   auth: null,
+165 verbose parsed url   host: null,
+165 verbose parsed url   port: null,
+165 verbose parsed url   hostname: null,
+165 verbose parsed url   hash: null,
+165 verbose parsed url   search: null,
+165 verbose parsed url   query: null,
+165 verbose parsed url   pathname: 'semver@^2.2.1',
+165 verbose parsed url   path: 'semver@^2.2.1',
+165 verbose parsed url   href: 'semver@^2.2.1' }
+166 verbose cache add name="semver" spec="^2.2.1" args=["semver","^2.2.1"]
+167 verbose parsed url { protocol: null,
+167 verbose parsed url   slashes: null,
+167 verbose parsed url   auth: null,
+167 verbose parsed url   host: null,
+167 verbose parsed url   port: null,
+167 verbose parsed url   hostname: null,
+167 verbose parsed url   hash: null,
+167 verbose parsed url   search: null,
+167 verbose parsed url   query: null,
+167 verbose parsed url   pathname: '^2.2.1',
+167 verbose parsed url   path: '^2.2.1',
+167 verbose parsed url   href: '^2.2.1' }
+168 verbose addNamed [ 'semver', '^2.2.1' ]
+169 verbose addNamed [ null, null ]
+170 silly lockFile d8627689-semver-2-2-1 semver@^2.2.1
+171 verbose lock semver@^2.2.1 /Users/wesley/.npm/d8627689-semver-2-2-1.lock
+172 info addNameTag [ 'pretty-hrtime', '^0.2.0' ]
+173 verbose url raw gulp-util
+174 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-util' ]
+175 verbose url resolved https://registry.npmjs.org/gulp-util
+176 info trying registry request attempt 1 at 19:20:21
+177 http GET https://registry.npmjs.org/gulp-util
+178 verbose url raw orchestrator
+179 verbose url resolving [ 'https://registry.npmjs.org/', './orchestrator' ]
+180 verbose url resolved https://registry.npmjs.org/orchestrator
+181 info trying registry request attempt 1 at 19:20:21
+182 http GET https://registry.npmjs.org/orchestrator
+183 info addNameTag [ 'vinyl-fs', '^0.1.0' ]
+184 verbose cache add [ 'archy@^0.0.2', null ]
+185 verbose cache add name=undefined spec="archy@^0.0.2" args=["archy@^0.0.2",null]
+186 verbose parsed url { protocol: null,
+186 verbose parsed url   slashes: null,
+186 verbose parsed url   auth: null,
+186 verbose parsed url   host: null,
+186 verbose parsed url   port: null,
+186 verbose parsed url   hostname: null,
+186 verbose parsed url   hash: null,
+186 verbose parsed url   search: null,
+186 verbose parsed url   query: null,
+186 verbose parsed url   pathname: 'archy@^0.0.2',
+186 verbose parsed url   path: 'archy@^0.0.2',
+186 verbose parsed url   href: 'archy@^0.0.2' }
+187 verbose cache add name="archy" spec="^0.0.2" args=["archy","^0.0.2"]
+188 verbose parsed url { protocol: null,
+188 verbose parsed url   slashes: null,
+188 verbose parsed url   auth: null,
+188 verbose parsed url   host: null,
+188 verbose parsed url   port: null,
+188 verbose parsed url   hostname: null,
+188 verbose parsed url   hash: null,
+188 verbose parsed url   search: null,
+188 verbose parsed url   query: null,
+188 verbose parsed url   pathname: '^0.0.2',
+188 verbose parsed url   path: '^0.0.2',
+188 verbose parsed url   href: '^0.0.2' }
+189 verbose addNamed [ 'archy', '^0.0.2' ]
+190 verbose addNamed [ null, null ]
+191 silly lockFile bdbf708d-archy-0-0-2 archy@^0.0.2
+192 verbose lock archy@^0.0.2 /Users/wesley/.npm/bdbf708d-archy-0-0-2.lock
+193 verbose cache add [ 'deprecated@^0.0.1', null ]
+194 verbose cache add name=undefined spec="deprecated@^0.0.1" args=["deprecated@^0.0.1",null]
+195 verbose parsed url { protocol: null,
+195 verbose parsed url   slashes: null,
+195 verbose parsed url   auth: null,
+195 verbose parsed url   host: null,
+195 verbose parsed url   port: null,
+195 verbose parsed url   hostname: null,
+195 verbose parsed url   hash: null,
+195 verbose parsed url   search: null,
+195 verbose parsed url   query: null,
+195 verbose parsed url   pathname: 'deprecated@^0.0.1',
+195 verbose parsed url   path: 'deprecated@^0.0.1',
+195 verbose parsed url   href: 'deprecated@^0.0.1' }
+196 verbose cache add name="deprecated" spec="^0.0.1" args=["deprecated","^0.0.1"]
+197 verbose parsed url { protocol: null,
+197 verbose parsed url   slashes: null,
+197 verbose parsed url   auth: null,
+197 verbose parsed url   host: null,
+197 verbose parsed url   port: null,
+197 verbose parsed url   hostname: null,
+197 verbose parsed url   hash: null,
+197 verbose parsed url   search: null,
+197 verbose parsed url   query: null,
+197 verbose parsed url   pathname: '^0.0.1',
+197 verbose parsed url   path: '^0.0.1',
+197 verbose parsed url   href: '^0.0.1' }
+198 verbose addNamed [ 'deprecated', '^0.0.1' ]
+199 verbose addNamed [ null, null ]
+200 silly lockFile 0e32a569-deprecated-0-0-1 deprecated@^0.0.1
+201 verbose lock deprecated@^0.0.1 /Users/wesley/.npm/0e32a569-deprecated-0-0-1.lock
+202 verbose cache add [ 'liftoff@^0.9.3', null ]
+203 verbose cache add name=undefined spec="liftoff@^0.9.3" args=["liftoff@^0.9.3",null]
+204 verbose parsed url { protocol: null,
+204 verbose parsed url   slashes: null,
+204 verbose parsed url   auth: null,
+204 verbose parsed url   host: null,
+204 verbose parsed url   port: null,
+204 verbose parsed url   hostname: null,
+204 verbose parsed url   hash: null,
+204 verbose parsed url   search: null,
+204 verbose parsed url   query: null,
+204 verbose parsed url   pathname: 'liftoff@^0.9.3',
+204 verbose parsed url   path: 'liftoff@^0.9.3',
+204 verbose parsed url   href: 'liftoff@^0.9.3' }
+205 verbose cache add name="liftoff" spec="^0.9.3" args=["liftoff","^0.9.3"]
+206 verbose parsed url { protocol: null,
+206 verbose parsed url   slashes: null,
+206 verbose parsed url   auth: null,
+206 verbose parsed url   host: null,
+206 verbose parsed url   port: null,
+206 verbose parsed url   hostname: null,
+206 verbose parsed url   hash: null,
+206 verbose parsed url   search: null,
+206 verbose parsed url   query: null,
+206 verbose parsed url   pathname: '^0.9.3',
+206 verbose parsed url   path: '^0.9.3',
+206 verbose parsed url   href: '^0.9.3' }
+207 verbose addNamed [ 'liftoff', '^0.9.3' ]
+208 verbose addNamed [ null, null ]
+209 silly lockFile e16e48d9-liftoff-0-9-3 liftoff@^0.9.3
+210 verbose lock liftoff@^0.9.3 /Users/wesley/.npm/e16e48d9-liftoff-0-9-3.lock
+211 verbose cache add [ 'chalk@^0.4.0', null ]
+212 verbose cache add name=undefined spec="chalk@^0.4.0" args=["chalk@^0.4.0",null]
+213 verbose parsed url { protocol: null,
+213 verbose parsed url   slashes: null,
+213 verbose parsed url   auth: null,
+213 verbose parsed url   host: null,
+213 verbose parsed url   port: null,
+213 verbose parsed url   hostname: null,
+213 verbose parsed url   hash: null,
+213 verbose parsed url   search: null,
+213 verbose parsed url   query: null,
+213 verbose parsed url   pathname: 'chalk@^0.4.0',
+213 verbose parsed url   path: 'chalk@^0.4.0',
+213 verbose parsed url   href: 'chalk@^0.4.0' }
+214 verbose cache add name="chalk" spec="^0.4.0" args=["chalk","^0.4.0"]
+215 verbose parsed url { protocol: null,
+215 verbose parsed url   slashes: null,
+215 verbose parsed url   auth: null,
+215 verbose parsed url   host: null,
+215 verbose parsed url   port: null,
+215 verbose parsed url   hostname: null,
+215 verbose parsed url   hash: null,
+215 verbose parsed url   search: null,
+215 verbose parsed url   query: null,
+215 verbose parsed url   pathname: '^0.4.0',
+215 verbose parsed url   path: '^0.4.0',
+215 verbose parsed url   href: '^0.4.0' }
+216 verbose addNamed [ 'chalk', '^0.4.0' ]
+217 verbose addNamed [ null, null ]
+218 silly lockFile b2f4396d-chalk-0-4-0 chalk@^0.4.0
+219 verbose lock chalk@^0.4.0 /Users/wesley/.npm/b2f4396d-chalk-0-4-0.lock
+220 info addNameTag [ 'semver', '^2.2.1' ]
+221 verbose url raw pretty-hrtime
+222 verbose url resolving [ 'https://registry.npmjs.org/', './pretty-hrtime' ]
+223 verbose url resolved https://registry.npmjs.org/pretty-hrtime
+224 info trying registry request attempt 1 at 19:20:21
+225 http GET https://registry.npmjs.org/pretty-hrtime
+226 verbose url raw vinyl-fs
+227 verbose url resolving [ 'https://registry.npmjs.org/', './vinyl-fs' ]
+228 verbose url resolved https://registry.npmjs.org/vinyl-fs
+229 info trying registry request attempt 1 at 19:20:21
+230 http GET https://registry.npmjs.org/vinyl-fs
+231 info addNameTag [ 'archy', '^0.0.2' ]
+232 info addNameTag [ 'deprecated', '^0.0.1' ]
+233 info addNameTag [ 'liftoff', '^0.9.3' ]
+234 info addNameTag [ 'chalk', '^0.4.0' ]
+235 verbose url raw deprecated
+236 verbose url resolving [ 'https://registry.npmjs.org/', './deprecated' ]
+237 verbose url resolved https://registry.npmjs.org/deprecated
+238 info trying registry request attempt 1 at 19:20:21
+239 http GET https://registry.npmjs.org/deprecated
+240 verbose url raw liftoff
+241 verbose url resolving [ 'https://registry.npmjs.org/', './liftoff' ]
+242 verbose url resolved https://registry.npmjs.org/liftoff
+243 info trying registry request attempt 1 at 19:20:21
+244 http GET https://registry.npmjs.org/liftoff
+245 verbose url raw archy
+246 verbose url resolving [ 'https://registry.npmjs.org/', './archy' ]
+247 verbose url resolved https://registry.npmjs.org/archy
+248 info trying registry request attempt 1 at 19:20:21
+249 http GET https://registry.npmjs.org/archy
+250 verbose url raw chalk
+251 verbose url resolving [ 'https://registry.npmjs.org/', './chalk' ]
+252 verbose url resolved https://registry.npmjs.org/chalk
+253 info trying registry request attempt 1 at 19:20:21
+254 verbose etag "DT5R0LRCEMW7L0QEK1P7JYXEM"
+255 http GET https://registry.npmjs.org/chalk
+256 verbose url raw semver
+257 verbose url resolving [ 'https://registry.npmjs.org/', './semver' ]
+258 verbose url resolved https://registry.npmjs.org/semver
+259 info trying registry request attempt 1 at 19:20:21
+260 verbose etag "2TBAKVIW8IZWONEK6H6ORWA6L"
+261 http GET https://registry.npmjs.org/semver
+262 http 200 https://registry.npmjs.org/gulp-util
+263 silly registry.get cb [ 200,
+263 silly registry.get   { date: 'Wed, 05 Mar 2014 22:20:18 GMT',
+263 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+263 silly registry.get     etag: '"5VWJIZW2CD5VK7XDWHAM6JPPY"',
+263 silly registry.get     'content-type': 'application/json',
+263 silly registry.get     'cache-control': 'max-age=1',
+263 silly registry.get     'content-length': '31118',
+263 silly registry.get     'accept-ranges': 'bytes',
+263 silly registry.get     via: '1.1 varnish',
+263 silly registry.get     age: '145729',
+263 silly registry.get     'x-served-by': 'cache-v36-ASH',
+263 silly registry.get     'x-cache': 'HIT',
+263 silly registry.get     'x-cache-hits': '1181',
+263 silly registry.get     'x-timer': 'S1394058018.580335379,VS0,VE0',
+263 silly registry.get     vary: 'Accept',
+263 silly registry.get     'keep-alive': 'timeout=10, max=50',
+263 silly registry.get     connection: 'Keep-Alive' } ]
+264 silly lockFile b0a108b6-gulp-util-2-2-0 gulp-util@^2.2.0
+265 silly lockFile b0a108b6-gulp-util-2-2-0 gulp-util@^2.2.0
+266 verbose about to build /usr/local/share/npm/lib/node_modules/gulp
+267 info /usr/local/share/npm/lib/node_modules/gulp unbuild
+268 verbose from cache /usr/local/share/npm/lib/node_modules/gulp/package.json
+269 info preuninstall gulp@3.5.5
+270 info uninstall gulp@3.5.5
+271 verbose true,/usr/local/share/npm/lib/node_modules,/usr/local/share/npm/lib/node_modules unbuild gulp@3.5.5
+272 verbose /usr/local/share/npm/bin,[object Object] binRoot
+273 info postuninstall gulp@3.5.5
+274 error Error: No compatible version found: gulp-util@'^2.2.0'
+274 error Valid install targets:
+274 error ["0.0.1","1.0.0","1.1.0","1.1.1","1.2.0","1.3.0","2.0.0","2.1.1","2.1.2","2.1.3","2.1.4","2.2.0","2.2.1","2.2.2","2.2.3","2.2.5","2.2.6","2.2.7","2.2.8","2.2.9","2.2.10","2.2.11","2.2.12","2.2.13","2.2.14"]
+274 error     at installTargetsError (/usr/local/Cellar/node/0.10.11/lib/node_modules/npm/lib/cache.js:719:10)
+274 error     at /usr/local/Cellar/node/0.10.11/lib/node_modules/npm/lib/cache.js:641:10
+274 error     at saved (/usr/local/Cellar/node/0.10.11/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:138:7)
+274 error     at Object.oncomplete (fs.js:107:15)
+275 error If you need help, you may report this log at:
+275 error     <http://github.com/isaacs/npm/issues>
+275 error or email it to:
+275 error     <npm-@googlegroups.com>
+276 error System Darwin 13.1.0
+277 error command "/usr/local/Cellar/node/0.10.11/bin/node" "/usr/local/bin/npm" "install" "-g" "gulp"
+278 error cwd /Users/wesley/Dropbox/Sites/vhosts-projects/zf2angularjs
+279 error node -v v0.10.11
+280 error npm -v 1.2.30
+281 verbose exit [ 1, true ]
