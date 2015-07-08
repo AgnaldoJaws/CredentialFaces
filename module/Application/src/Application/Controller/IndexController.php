@@ -11,8 +11,7 @@ namespace Application\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
-use Application\Entity\Evento;
-//use Application\Entity\Produto;
+use Application\Entity\Aluno;
 
 class IndexController extends AbstractActionController
 {
@@ -20,19 +19,19 @@ class IndexController extends AbstractActionController
     {
 
         $em = $this->getServiceLocator()->get('Doctrine\ORM\EntityManager');
-        $repo = $em->getRepository("Application\Entity\Evento");
+        $repo = $em->getRepository("Application\Entity\Aluno");
 
-//        $evento = new Evento();
-//        $evento->setCurso("Sintec");
-
-//       $em->persist($evento); // preparar para gravar
-//       $em->flush(); // grava no banco
+//        $categoria = new Categoria();
+//        $categoria->setNome("Laptops");
+//
+//        $em->persist($categoria); // preparar para gravar
+//        $em->flush(); // grava no banco
 //
 
- //      $categoriaService = $this->getServiceLocator()->get('Application\Service\Categoria');
- //      $categoriaService->delete(4);
+//        $categoriaService = $this->getServiceLocator()->get('Application\Service\Categoria');
+//        $categoriaService->delete(4);
 
-        $evento = $repo->findAll();
+        $categorias = $repo->findAll();
 
 //        $categoria = $repo->find(1);
 //
@@ -46,10 +45,10 @@ class IndexController extends AbstractActionController
 
         //$produtoService = $this->getServiceLocator()->get('Application\Service\Produto');
         //$produtoService->insert(array('nome'=>'Game B','categoriaId'=>1));
-        //$produtoService->delete(2);
+       // $produtoService->delete(2);
 
 
-        return new ViewModel(array('evento'=>$evento));
+        return new ViewModel(array('categorias'=>$categorias));
     }
 
 }

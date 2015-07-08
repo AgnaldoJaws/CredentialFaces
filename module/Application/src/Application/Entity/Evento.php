@@ -5,7 +5,6 @@ namespace Application\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="Application\Entity\EventoRepository")
  * @ORM\Table(name="evento")
  */
 class Evento
@@ -17,6 +16,11 @@ class Evento
      * @ORM\GeneratedValue
      */
     private $cod_evento;
+    
+    /**
+     * @ORM\OneToMany(targetEntity="CredentialFaces\Entity\Aluno_Evento",mappedBy="Evento")
+     */
+    protected $aluno_evento;
     
     /**
      * @ORM\Column(type="string")
