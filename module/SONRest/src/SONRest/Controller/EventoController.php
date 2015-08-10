@@ -4,15 +4,15 @@ namespace SONRest\Controller;
 
 use Zend\Mvc\Controller\AbstractRestfulController;
 use Zend\View\Model\JsonModel;
-class AlunoController extends AbstractRestfulController
+class EventoController extends AbstractRestfulController
 {
 
-// get
+    // get
     public function getList()
     {
         $em = $this->getServiceLocator()->get('Doctrine\ORM\EntityManager');
 
-        $data = $em->getRepository('Application\Entity\Aluno')->findAll();
+        $data = $em->getRepository('Application\Entity\Event')->findAll();
 
         return $data;
 
@@ -23,7 +23,7 @@ class AlunoController extends AbstractRestfulController
     {
         $em = $this->getServiceLocator()->get('Doctrine\ORM\EntityManager');
 
-        $data = $em->getRepository('Application\Entity\Aluno')->find($id);
+        $data = $em->getRepository('Application\Entity\Evento')->find($id);
 
         return $data;
     }
@@ -31,12 +31,12 @@ class AlunoController extends AbstractRestfulController
     // post
     public function create($data)
     {
-        $serviceAluno = $this->getServiceLocator()->get('Application\Service\Aluno');
-        $nome = $data['nome_aluno'];
+        $serviceEvento = $this->getServiceLocator()->get('Application\Service\Evento');
+        $nome = $data['nome'];
 
-        $Aluno = $serviceAluno->insert($nome);
-        if($Aluno) {
-            return $Aluno;
+        $Evento = $serviceEvento->insert($nome);
+        if($Evento) {
+            return $Evento;
         } else {
             return array('success'=>false);
         }
@@ -46,13 +46,13 @@ class AlunoController extends AbstractRestfulController
     // put
     public function update($id, $data)
     {
-        $serviceAluno = $this->getServiceLocator()->get('Application\Service\Aluno');
+        $serviceEvento = $this->getServiceLocator()->get('Application\Service\Evento');
         $param['id'] = $id;
         $param['nome'] = $data['nome'];
 
-        $Aluno = $serviceAluno->update($param);
-        if($Aluno) {
-            return $Aluno;
+        $Evento = $serviceEvento->update($param);
+        if($Evento) {
+            return $Evento;
         } else {
             return array('success'=>false);
         }
@@ -61,11 +61,9 @@ class AlunoController extends AbstractRestfulController
     // delete
     public function delete($id)
     {
-        $serviceAluno = $this->getServiceLocator()->get('Application\Service\Aluno');
-        $result = $serviceAluno->delete($id);
+        $serviceEvento = $this->getServiceLocator()->get('Application\Service\Evento');
+        $result = $serviceEvento->delete($id);
         if($result) return $result;
     }
-
-    
 
 } 

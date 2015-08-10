@@ -1,0 +1,30 @@
+<h3> Eventos</h3>
+<h3> Autenticação</h3>
+
+
+
+
+
+<br />
+
+<?php if ($this->error):?>
+<p><b>Usuário ou senha inválidos</b></p>
+<?php endif;?>
+
+<?php 
+$form = $this->form;
+
+$form->setAttribute('action', $this->url('auth',array('controller'=>'Auth','action'=>'index')));
+$form->prepare();
+echo $this->form()->openTag($form);
+echo $this->formRow($form->get('email'));
+echo $this->formRow($form->get('password'));
+echo $this->formSubmit($form->get('submit'));
+echo $this->form()->closeTag();
+
+
+
+
+
+
+?>

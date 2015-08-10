@@ -4,10 +4,12 @@ namespace Application\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
+use Application\Entity\Configurator;
 
 /**
  * @ORM\Entity
  * @ORM\Table(name="aluno")
+ * @ORM\Entity(repositoryClass="Application\Entity\AlunoRepository")
  */
 class Aluno {
 	
@@ -19,7 +21,7 @@ class Aluno {
 	 * @var int
 	 */
 	protected $cod_aluno;
-		
+	
 	/**
 	 * @ORM\Column(type="text")
 	 *
@@ -113,6 +115,17 @@ class Aluno {
 	 * @var string
 	 */
 	protected $senha;
+	
+	/**
+	 * @ORM\Column(type="text")
+	 *
+	 * @var string
+	 */
+	protected $salt;
+	public function __construct($options = null) {
+		Configurator::configure ( $this, $options );
+		$this->salt = base_convert ( sha1 ( uniqid ( mt_rand (), true ) ), 16, 36 );
+	}
 	public function getCodAluno() {
 		return $this->cod_aluno;
 	}
@@ -222,8 +235,43 @@ class Aluno {
 		return $this->senha;
 	}
 	public function setSenha($senha) {
-		$this->senha = $senha;
+		$hashSenha = $this->encryptPassword ( $senha );
+		$this->senha = $hashSenha;
 		return $this;
+	}
+	public function getSalt() {
+		return $this->salt;
+	}
+	public function setSalt($salt) {
+		$this->salt = $salt;
+		return $this;
+	}
+	public function encryptPassword($senha) {
+		$hashSenha = hash ( 'sha512', $senha . $this->salt );
+		for($i = 0; $i < 64000; $i ++)
+			$hashSenha = hash ( 'sha512', $hashSenha );
+		
+		return $hashSenha;
+	}
+	public function toArray() {
+		return array (
+				'id' => $this->getCodAluno (),				
+				'cidade' => $this->getCidade (),
+				'nome_aluno' => $this->getNomeCliente (),				
+				'endereco' => $this->getEndereco (),
+				'bairro' => $this->getBairro (),
+				'estado' => $this->getEstado (),
+				'complemento' => $this->getComplemento (),
+				'cpf' => $this->getCpf (),
+				'rg' => $this->getRg (),
+				'celular' => $this->getCelular (),
+				'telefone' => $this->getTelefone (),
+				'email' => $this->getEmail (),
+				'cep' => $this->getCep (),
+				'skype' => $this->getSkype (),
+				'senha' => $this->getSenha (),
+				'salt' => $this->getSalt () 
+		);
 	}
 }
 

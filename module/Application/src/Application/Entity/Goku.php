@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Table(name="aluno_evento")
  */
-class Aluno_Evento {
+class Goku {
 	
 	/**
 	 * @ORM\Id
@@ -18,14 +18,14 @@ class Aluno_Evento {
 	private $cod_aln_evt;
 	
 	/**
-	 * @ORM\ManyToOne(targetEntity="CredentialFaces\Entity\Aluno", inversedBy="Aluno_Evento")
+	 * @ORM\ManyToOne(targetEntity="CredentialFaces\Entity\Aluno", inversedBy="Goku")
 	 * @ORM\JoinColumn(name="cod_aluno", referencedColumnName="cod_aluno")
 	 */
 	private $aluno;
 	
 	/**
-	 * @ORM\ManyToOne(targetEntity="CredentialFaces\Entity\Evento", inversedBy="Aluno_Evento")
-	 * @ORM\JoinColumn(name="cod_evento", referencedColumnName="cod_evento")
+	 * @ORM\ManyToOne(targetEntity="CredentialFaces\Entity\Event", inversedBy="Goku")
+	 * @ORM\JoinColumn(name="cod_event", referencedColumnName="cod_event")
 	 */
 	private $evento;
 	

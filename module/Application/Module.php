@@ -4,6 +4,7 @@ namespace Application;
 
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
+use Application\Auth\DoctrineAdapter as DoctrineAdap;
 
 class Module
 {
@@ -23,15 +24,23 @@ class Module
     {
         return array(
           'factories' => array(
-              'Application\Service\Categoria' => function($sm) {
+              'Application\Service\Aluno' => function($sm) {
                       $em = $sm->get('Doctrine\ORM\EntityManager');
-                      $categoriaService = new \Application\Service\Categoria($em);
+                      $categoriaService = new \Application\Service\Aluno($em);
                       return $categoriaService;
                   },
-              'Application\Service\Produto' => function($sm) {
+              'Application\Service\Evento' => function($sm) {
                       $em = $sm->get('Doctrine\ORM\EntityManager');
-                      $produtoService = new \Application\Service\Produto($em);
+                      $produtoService = new \Application\Service\Evento($em);
                       return $produtoService;
+                  },
+              'Application\Service\AlunoEvento' => function($sm) {
+                      $em = $sm->get('Doctrine\ORM\EntityManager');
+                      $AlunoEventoService = new \Application\Service\AlunoEvento($em);
+                      return $AlunoEventoService;
+                  },
+                  'Application\Auth\DoctrineAdapter' => function($sm) {
+                  return new DoctrineAdap($sm->get('Doctrine\ORM\EntityManager'));
                   }
           )
         );

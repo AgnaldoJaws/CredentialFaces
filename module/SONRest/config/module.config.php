@@ -3,8 +3,9 @@
 return array(
     'controllers' => array(
         'invokables' => array(
-            'categoria' => 'SONRest\Controller\CategoriaController',
-            'produto' => 'SONRest\Controller\ProdutoController'
+            'aluno' => 'SONRest\Controller\AlunoController',
+        		'evento' => 'SONRest\Controller\EventoController',
+            
         )
     ),
 

@@ -4,7 +4,8 @@ return array(
     'modules' => array(
         'DoctrineModule',
         'DoctrineORMModule',
-        
+    		'JMSSerializerModule',
+        'SONRest',
         'Application',
         
     ),
